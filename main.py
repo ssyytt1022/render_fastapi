@@ -49,3 +49,13 @@ def index():
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+@app.get("/janken")
+def janken():
+    janken_list = [
+        "グー",
+        "チョキ",
+        "パー"
+    ]
+
+    return omikuji_list[random.randrange(10)]
