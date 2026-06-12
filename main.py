@@ -58,4 +58,4 @@ def janken():
         "パー"
     ]
 
-    return omikuji_list[random.randrange(10)]
+    return janken_list[random.randrange(3)]
